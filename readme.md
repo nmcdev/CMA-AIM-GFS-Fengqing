@@ -1,10 +1,10 @@
-## FengQing
+## FengQing V1.0
 
 FengQing is a data-driven model for medium-range weather forecasting jointly developed by the China Meteorological Administration and School of Software at Tsinghua University. It leverages advanced machine-learning techniques to enhance weather forecasting and analysis for over 10 days. The runnable model and inference code are fully open-sourced, allowing users to set up and perform their weather predictions efficiently.
 
 ## Data and Model Download
 
-To begin working on this project, you need to download the sample input data and pre-trained models from this link, which is organized according to the following directory structure:
+To begin working on this project, you need to download the sample input data and pre-trained models from this [zenodo link](https://zenodo.org/records/14056420?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6Ijk1NjM4YjMzLWExN2QtNDEwMy1hMWRmLWJiYTRlYzE5MDgwYiIsImRhdGEiOnt9LCJyYW5kb20iOiJkZDA4Yjg3ZDkzMmZkNWM1YzMxYjM5YmQzZjU2Y2E5NCJ9.0wj49DmKDAGB-fdMXYOsmY2O70UMUorpbwtki4-N5h89O0bEPaGSaOcaJTuWtm6v33nnCeSWKGL8plUxmpCUjg) or [Google Cloud](https://drive.google.com/file/d/1e0DSHVcy04s5iVErQ_3gYg_4z9J_5040/view?usp=share_link), which is organized according to the following directory structure:
 
 ```yaml
 project_root/
@@ -30,7 +30,7 @@ project_root/
 │   ├── fengqing.onnx
 ```
 
-You can customize the input data by modifying functions in `get_data.py`. To ensure compatibility, please keep the exact input variable order and units as specified in the [details of data](#Details of Data).
+You can customize the input data by modifying `get_data` function in inference_fengqing.py. To ensure compatibility, please keep the exact input variable order and units as specified in the [details of data](#Details of Data).
 
 ## Quick Start
 
