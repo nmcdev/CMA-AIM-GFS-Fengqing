@@ -10,11 +10,11 @@ To begin working on this project, you need to download the sample input data and
 project_root/
 ├── data/
 │   ├── YYYY
-│   	├── MMDD
-│   		├── pressure_060000.npy
-│   		├── pressure_120000.npy
-│   		├── surface_060000.npy
-│   		├── surface_120000.npy
+│       ├── MMDD
+│           ├── pressure_060000.npy
+│           ├── pressure_120000.npy
+│           ├── surface_060000.npy
+│           ├── surface_120000.npy
 ├── mean_std/
 │   ├── upper_mean.npy
 │   ├── surface_mean.npy
