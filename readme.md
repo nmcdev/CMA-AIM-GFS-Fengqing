@@ -1,4 +1,4 @@
-## FengQing V1.0
+## FengQing
 
 FengQing is a data-driven model for medium-range weather forecasting jointly developed by the China Meteorological Administration and School of Software at Tsinghua University. It leverages advanced machine-learning techniques to enhance weather forecasting and analysis for over 10 days. The runnable model and inference code are fully open-sourced, allowing users to set up and perform their weather predictions efficiently.
 
@@ -10,11 +10,11 @@ To begin working on this project, you need to download the sample input data and
 project_root/
 ├── data/
 │   ├── YYYY
-│       ├── MMDD
-│           ├── pressure_060000.npy
-│           ├── pressure_120000.npy
-│           ├── surface_060000.npy
-│           ├── surface_120000.npy
+│   	├── MMDD
+│   		├── pressure_060000.npy
+│   		├── pressure_120000.npy
+│   		├── surface_060000.npy
+│   		├── surface_120000.npy
 ├── mean_std/
 │   ├── upper_mean.npy
 │   ├── surface_mean.npy
@@ -34,7 +34,7 @@ You can customize the input data by modifying `get_data` function in inference_f
 
 ## Quick Start
 
-Once downloading the model and sample data, follow these steps to install the necessary environment and run the inference script.
+Once downloading the model and sample data, follow these steps to install the necessary environment and run the inference script. When using **onnxruntime-gpu**, the model requires **26.5 GB** of GPU memory to run effectively. Please ensure you have a GPU with sufficient memory for optimal performance.
 
 1. Install dependencies
 
@@ -75,3 +75,6 @@ The pressure levels are arranged in the following sequence:
 | 10 metre V wind component |     V10      | $\text{m/s}$ |
 |    2 metre temperature    |     T2M      |  $\text{K}$  |
 
+## Note
+
+* We are currently working on an updated version of the model that will include **precipitation output** as part of the FengQing model. Stay tuned for upcoming releases.
