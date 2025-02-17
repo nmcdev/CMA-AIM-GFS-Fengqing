@@ -4,7 +4,7 @@ FengQing is a data-driven model for medium-range weather forecasting jointly dev
 
 ## Data and Model Download
 
-To begin working on this project, you need to download the sample input data and pre-trained models from this [zenodo link](https://zenodo.org/records/14056420?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6Ijk1NjM4YjMzLWExN2QtNDEwMy1hMWRmLWJiYTRlYzE5MDgwYiIsImRhdGEiOnt9LCJyYW5kb20iOiJkZDA4Yjg3ZDkzMmZkNWM1YzMxYjM5YmQzZjU2Y2E5NCJ9.0wj49DmKDAGB-fdMXYOsmY2O70UMUorpbwtki4-N5h89O0bEPaGSaOcaJTuWtm6v33nnCeSWKGL8plUxmpCUjg) or [Google Cloud](https://drive.google.com/file/d/1e0DSHVcy04s5iVErQ_3gYg_4z9J_5040/view?usp=share_link), which is organized according to the following directory structure:
+To begin working on this project, you need to download the sample input data and pre-trained models from this [zenodo link](https://zenodo.org/records/14056420?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6Ijk1NjM4YjMzLWExN2QtNDEwMy1hMWRmLWJiYTRlYzE5MDgwYiIsImRhdGEiOnt9LCJyYW5kb20iOiJkZDA4Yjg3ZDkzMmZkNWM1YzMxYjM5YmQzZjU2Y2E5NCJ9.0wj49DmKDAGB-fdMXYOsmY2O70UMUorpbwtki4-N5h89O0bEPaGSaOcaJTuWtm6v33nnCeSWKGL8plUxmpCUjg) or [Google Drive](https://drive.google.com/file/d/1e0DSHVcy04s5iVErQ_3gYg_4z9J_5040/view?usp=share_link), which is organized according to the following directory structure:
 
 ```yaml
 project_root/
@@ -68,13 +68,14 @@ The pressure levels are arranged in the following sequence:
 
 * Surface data: [variable, lat, lon]
 
-|     surface variable      | abbreviation |     unit     |
-| :-----------------------: | :----------: | :----------: |
-|  Mean sea level pressure  |     MSLP     | $\text{Pa}$  |
-| 10 metre U wind component |     U10      | $\text{m/s}$ |
-| 10 metre V wind component |     V10      | $\text{m/s}$ |
-|    2 metre temperature    |     T2M      |  $\text{K}$  |
+|        surface variable        | abbreviation |     unit     |
+| :----------------------------: | :----------: | :----------: |
+|    Mean sea level pressure     |     MSLP     | $\text{Pa}$  |
+|   10 metre U wind component    |     U10      | $\text{m/s}$ |
+|   10 metre V wind component    |     V10      | $\text{m/s}$ |
+|      2 metre temperature       |     T2M      |  $\text{K}$  |
+| Total Precipitation (optional) |      TP      | $\text{mm}$  |
 
-## Note
+## Update
 
-* We are currently working on an updated version of the model that will include **precipitation output** as part of the FengQing model. Stay tuned for upcoming releases.
+​	We've successfully uploaded the total precipitation model, which is now available for use on [Google Drive](https://drive.google.com/file/d/1QhrZDHAUrkFBFFPbFXnz4brU2t_Z_SzL/view?usp=sharing). To fully reproduce the results, please obtain the total precipitation data for a 6-hour period (in mm units) and concatenate it with the surface input. The mean and standard deviation values required for preprocessing can be found in this [Google Drive link](https://drive.google.com/file/d/1xo4QWp-VhHSbBrCZh7IZtYKRo94Myzn5/view?usp=share_link).
